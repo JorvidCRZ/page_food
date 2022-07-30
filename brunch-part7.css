@@ -1,0 +1,206 @@
+.fondo-6{
+    padding: 0;
+    background-image: url(Fondos/Fondo6.png);
+    background-color: var(--yellow);
+    height: 961px;
+    max-width: 100%;
+    position:relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content-6{  
+    position: absolute; 
+    top: 170px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content-text6{
+    text-align: center;
+    color: var(--gray);
+}
+.content-text6 h1{
+    font-family: var(--MSB);
+    font-size: var(--mc);
+    margin-bottom: 60px;
+    letter-spacing:2px;
+}
+.content-text6 h1::selection{
+    color:var(--yellow);
+    background:var(--gray);
+}
+.content-text6 p{
+    font-family: var(--MSB);
+    font-size: var(--mb);
+    padding-bottom: 90px;
+    letter-spacing:2px;
+}
+.content-text6 p::selection{
+    color:var(--yellow);
+    background:var(--gray);
+}
+.inputs{
+    display: flex;
+}
+.email{
+    display: flex;
+    border: none;
+}
+.email:nth-child(1){
+    font-family: var(--MSB);
+    font-size: var(--ma);
+    background: var(--white);
+    color: var(--gray);
+    width: 550px;
+    height: 65px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+.email:nth-child(1):hover{
+    transition: all 1s;
+    margin-left: 10px;
+    background: var(--gray);
+    color: var(--yellow);
+    font-weight: 600;
+}
+.email:nth-child(1)::placeholder{
+    color: var(--gray);
+    font-weight: 400;
+}
+.email:nth-child(1)::selection{
+    color: var(--yellow);
+    background-color: var(--gray);
+}
+.email:nth-child(1):hover::selection{
+    color: var(--gray);
+    background: var(--yellow);
+}
+.email:nth-child(2){
+    font-family: var(--MSB);
+    font-size: var(--mb);
+    background: var(--gray);
+    width: 220px;
+    height: 66px;
+    padding-left: 5%;
+    font-weight: bold;
+    color: var(--white);
+    text-align: center;
+}
+.email:nth-child(2):hover{
+    transition: all 1s;
+    width: 230px;
+    height: 68px;
+    padding-left: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--yellow);
+}
+@media screen and (min-width: 1350px) AND (max-width:1730px){
+    .fondo-6{
+        height: 787px;
+    }
+}
+@media screen and (min-width: 1080px) AND (max-width:1349px){
+    .fondo-6{
+        height: 787px;
+    }
+} 
+@media screen and (min-width: 690px) AND (max-width:1079px){
+    .fondo-6{
+        height: 787px;
+    }
+    .content-6{  
+        top: 130px; 
+    }
+    .content-text6 h1{
+        font-size: 35px;
+        margin-bottom: 50px;
+        letter-spacing: 0;
+    }
+    .content-text6 p{
+        font-size: var(--ma);
+        padding-bottom: 80px;
+        letter-spacing: 0;
+    }
+    .email:nth-child(1){
+        font-size: var(--ma);
+        width: 450px;
+        height: 60px;
+        padding-left: 10px;
+    }
+    .email:nth-child(1):hover{
+        transition: all 1s;
+        margin-left: 10px;
+        background: var(--gray);
+        color: var(--yellow);
+        font-weight: 500;
+    }
+    .email:nth-child(2){
+        font-size: var(--mb);    
+        width: 180px;
+        height: 60px;
+        padding-left: 3%;
+    }
+    .email:nth-child(2):hover{
+        transition: all 1s;
+        width: 190px;
+        height: 65px;
+        padding-left: 30px;
+        font-size: 25px;
+        padding-left: 2%;
+        cursor: pointer;
+        color: var(--yellow);
+    }  
+}
+@media only screen and (max-width: 689px){
+    .fondo-6{
+        height: 787px;
+    }
+    .content-6{  
+        top: 130px; 
+    }
+    .content-text6 h1{
+        font-size: 35px;
+        margin-bottom: 50px;
+        letter-spacing: 0;
+    }
+    .content-text6 p{
+        font-size: var(--ma);
+        padding-bottom: 80px;
+        letter-spacing: 0;
+    }
+    .email:nth-child(1){
+        font-size: var(--ma);
+        width: 300px;
+        height: 60px;
+        padding-left: 10px;
+    }
+    .email:nth-child(1):hover{
+        transition: all 1s;
+        margin-left: 10px;
+        background: var(--gray);
+        color: var(--yellow);
+        font-weight: 500;
+    }
+    .email:nth-child(2){
+        font-size: var(--mb);    
+        width: 180px;
+        height: 60px;
+        padding-left: 3%;
+    }
+    .email:nth-child(2):hover{
+        transition: all 1s;
+        width: 190px;
+        height: 65px;
+        padding-left: 30px;
+        font-size: 25px;
+        padding-left: 2%;
+        cursor: pointer;
+        color: var(--yellow);
+    }  
+}

@@ -1,0 +1,287 @@
+.fondo-1{
+    padding: 0;
+    background-image: url(Fondos/Fondo2.png);
+    background-color: var(--yellow);
+    height: 961px;
+    max-width: 100%;
+    position:relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content-1{
+    position: absolute; 
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.content-text1 {
+    display: flex;
+    justify-content: center;
+}
+.letras{
+    flex-direction: column;
+    text-align-last: center;
+}
+.letras h1{
+    font-family: var(--MSB);
+    font-size: var(--mc);    
+    color: var(--gray);
+}
+.letras h1::selection{
+    color:var(--yellow);
+    background:var(--gray);
+}
+.parraf{
+    letter-spacing:1px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-family: var(--MSB);
+    font-size: var(--mb);    
+    color: var(--gray);
+}
+.parraf p::selection{
+    color:var(--yellow);
+    background:var(--gray);
+}
+.content-items{
+    display: flex;
+    justify-content: center;
+}
+.content-items ul{
+    display: flex;
+    flex-direction: row;
+}
+.content-items li{
+    list-style-type: none;    
+    margin: 0  45px 0 45px;
+}
+.content-items li img{
+    width: 320px;
+    height: 280px;
+}
+.content-items li img:hover{
+    cursor: pointer;
+    border: 5px solid var(--gray);
+    transition: 1s;
+    width: 330px;
+    height: 290px;
+    margin: 0 35px 0 35px;
+    border-radius: 20px;
+}
+.content-items li img::selection{
+    background:var(--gray);
+}
+.description-food{
+    text-align: center;
+}
+.description-food h2{
+    font-family: var(--MSB);
+    font-size: var(--mb);
+    color: var(--gray);
+    letter-spacing:1px;
+}
+.description-food h2:hover{
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 1s;
+    background: linear-gradient(#000,var(--white));
+    -webkit-background-clip: text;
+    color: transparent;   
+}
+.description-food h2::selection{
+    color:var(--yellow);
+    background:var(--gray);
+}
+.description-food p{
+    letter-spacing:1px;
+    font-family: var(--MSB);
+    font-size: var(--mb);
+    color: var(--gray);
+}
+.description-food p:hover{
+    margin-top: 15px;
+    transition: 1s;
+}
+.description-food p::selection{
+    color:var(--yellow);
+    background:var(--gray);
+}
+@media screen and (min-width: 1350px) AND (max-width:1730px){
+    .fondo-1{      
+        height: 787px;  
+    }
+    .content-1{  
+        top: 60px;
+    }
+    .parraf{
+        margin-top: 35px;
+        margin-bottom: 45px;
+    }
+    .content-items{
+        padding-left: 0;
+    }
+    .content-items li{    
+        margin: 0  25px 0 25px;
+        text-align: -webkit-center;
+    } 
+    .content-items li img{
+        width: 290px;
+        height: 260px;
+    }
+    .content-items li img:hover{
+        cursor: pointer;
+        border: 5px solid var(--gray);
+        transition: 1s;
+        width: 320px;
+        height: 280px;
+        margin: 0 35px 0 35px;
+        border-radius: 20px;
+    }
+    .description-food p{
+        letter-spacing:0;
+    }
+}
+@media screen and (min-width: 1080px) AND (max-width:1349px){
+    .fondo-1{      
+        height: 787px;  
+    }
+    .content-1{  
+        top: 50px;
+    }
+    .content-items{
+        padding-left: 0;
+    }
+    .content-items li{
+        list-style-type: none;    
+        margin: 0  15px 0 15px;
+        text-align: -webkit-center;
+    } 
+    .content-items li img{
+        width: 250px;
+        height: 200px;
+    }
+    .content-items li img:hover{
+        cursor: pointer;
+        border: 5px solid var(--gray);
+        transition: 1s;
+        width: 270px;
+        height: 220px;
+        margin: 0 40px 0 40px;
+        border-radius: 20px;
+    }
+} 
+@media screen and (min-width: 690px) AND (max-width:1079px){
+    .fondo-1{      
+        height: 787px;  
+    }
+    .content-1{  
+        top: 40px;
+    }
+    .parraf{
+        letter-spacing:0;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        font-size: 18px;       
+    }
+    .content-items{
+        padding-left: 3%;
+        padding-right: 4%;
+    }
+    .content-items li{
+        list-style-type: none;    
+        margin: 0  15px 0 15px;
+        text-align: -webkit-center;
+    } 
+    .content-items li img{
+        width: 180px;
+        height: 150px;
+    }
+    .content-items li img:hover{
+        cursor: pointer;
+        border: 5px solid var(--gray);
+        transition: 1s;
+        width: 180px;
+        height: 130px;
+        margin: 0 10px 0 10px;
+        border-radius: 20px;
+    }
+    .description-food h2{  
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+    .description-food h2:hover{
+        font-size: var(--ma);
+        cursor: pointer;
+        transition: all 1s;
+        background: linear-gradient(#000,var(--white));
+        -webkit-background-clip: text;
+        color: transparent;   
+    }  
+    .description-food p{
+        letter-spacing:0;  
+        font-size: 15px;
+    }
+    .description-food p:hover{
+        margin-top: 15px;
+        transition: 1s;
+    }
+}
+@media only screen and (max-width: 689px){
+    .fondo-1{      
+        height: 787px;  
+    }
+    .content-1{  
+        top: 60px;
+    }
+    .parraf{
+        letter-spacing:0;
+        margin-top: 35px;
+        margin-bottom: 40px;
+        font-size: 15px;       
+    }
+    .content-items{
+        padding-left: 2%;
+        padding-right: 5%;
+    }
+    .content-items li{
+        list-style-type: none;    
+        margin: 0  20px 0 20px;
+        text-align: -webkit-center;
+    } 
+    .content-items li img{
+        width: 150px;
+        height: 120px;
+    }
+    .content-items li img:hover{
+        cursor: pointer;
+        border: 5px solid var(--gray);
+        transition: 1s;
+        width: 180px;
+        height: 130px;
+        margin: 0 10px 0 10px;
+        border-radius: 20px;
+    }
+    .description-food h2{  
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+    .description-food h2:hover{
+        font-size: var(--ma);
+        cursor: pointer;
+        transition: all 1s;
+        background: linear-gradient(#000,var(--white));
+        -webkit-background-clip: text;
+        color: transparent;   
+    }  
+    .description-food p{
+        letter-spacing:0;  
+        font-size: 13px;
+    }
+    .description-food p:hover{
+        margin-top: 25px;
+        transition: 1s;
+    }
+}
